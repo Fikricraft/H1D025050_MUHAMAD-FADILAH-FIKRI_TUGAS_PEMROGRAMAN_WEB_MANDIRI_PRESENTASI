@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kalibrasi Rotasi Ikan 3D</title>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+  <style>
+    body { background: #030811; color: #fff; font-family: sans-serif; text-align: center; padding: 20px; }
+    .grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+    .box { border: 2px solid #00d2ff; padding: 10px; width: 340px; height: 260px; }
+    model-viewer { width: 100%; height: 200px; background: #071220; }
+  </style>
+</head>
+<body>
+  <h2>PILIH SUDUT YANG KEPALA DI KANAN & EKOR DI KIRI:</h2>
+  <div class="grid">
+    <div class="box">
+      <h3>Opsi A: orientation="0deg 0deg -90deg"</h3>
+      <model-viewer src="assets/models/alien_fish_animated.glb" autoplay animation-name="*" orientation="0deg 0deg -90deg" camera-controls></model-viewer>
+    </div>
+    <div class="box">
+      <h3>Opsi B: orientation="0deg 0deg 90deg"</h3>
+      <model-viewer src="assets/models/alien_fish_animated.glb" autoplay animation-name="*" orientation="0deg 0deg 90deg" camera-controls></model-viewer>
+    </div>
+    <div class="box">
+      <h3>Opsi C: orientation="90deg 0deg 0deg"</h3>
+      <model-viewer src="assets/models/alien_fish_animated.glb" autoplay animation-name="*" orientation="90deg 0deg 0deg" camera-controls></model-viewer>
+    </div>
+    <div class="box">
+      <h3>Opsi D: orientation="-90deg 0deg 0deg"</h3>
+      <model-viewer src="assets/models/alien_fish_animated.glb" autoplay animation-name="*" orientation="-90deg 0deg 0deg" camera-controls></model-viewer>
+    </div>
+    <div class="box">
+      <h3>Opsi E: orientation="0deg 90deg 90deg"</h3>
+      <model-viewer src="assets/models/alien_fish_animated.glb" autoplay animation-name="*" orientation="0deg 90deg 90deg" camera-controls></model-viewer>
+    </div>
+    <div class="box">
+      <h3>Opsi F: orientation="0deg -90deg -90deg"</h3>
+      <model-viewer src="assets/models/alien_fish_animated.glb" autoplay animation-name="*" orientation="0deg -90deg -90deg" camera-controls></model-viewer>
+    </div>
+  </div>
+</body>
+</html>
